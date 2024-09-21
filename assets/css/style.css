@@ -135,7 +135,7 @@ header {
 }
 .navbar-brand img {
     max-width: 280px;
-    height: 56px;
+    height: 80px;
 }
 .navbar-collapse {
     flex-grow: 0;
