@@ -1,0 +1,29 @@
+/* Define the shake animation */
+@keyframes shake {
+    0% { transform: translateY(0); }
+    25% { transform: translateY(-10px); }
+    50% { transform: translateY(0); }
+    75% { transform: translateY(10px); }
+    100% { transform: translateY(0); }
+}
+
+/* Apply the shake animation to the image */
+.shake {
+    animation: shake 0.5s ease-in-out infinite;
+}
+/* Define the fade and move animation */
+@keyframes fadeDownLeft {
+    0% {
+        opacity: 0; /* Start with the text invisible */
+        transform: translate(-20px, -20px); /* Start position off-screen (top-left) */
+    }
+    100% {
+        opacity: 1; /* End with the text fully visible */
+        transform: translate(0, 0); /* End position at the original location */
+    }
+}
+
+/* Apply the animation to the paragraph */
+.fade-down-left {
+    animation: fadeDownLeft 2250ms ease-out; /* Apply the animation with a duration of 750ms */
+}
